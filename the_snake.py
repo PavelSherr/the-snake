@@ -1,4 +1,5 @@
 from random import randint
+
 import pygame
 
 # Константы для размеров поля и сетки:
@@ -92,7 +93,7 @@ class Snake(GameObject):
 
     def get_head_position(self):
         """Возвращает позицию головы змейки."""
-        return self.positions[0]
+        return self.positions
 
     def move(self):
         """Обновляет позицию змейки, учитывая её движение."""
@@ -189,6 +190,10 @@ def main():
 
         # Обновляем экран
         pygame.display.update()
+
+
+if __name__ == '__main__':
+    main()
 
 
 if __name__ == '__main__':
