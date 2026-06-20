@@ -194,13 +194,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-if __name__ == '__main__':
-    main()
-
-# Метод обновления направления после нажатия на кнопку
-# def update_direction(self):
-#     if self.next_direction:
-#         self.direction = self.next_direction
-#         self.next_direction = None
