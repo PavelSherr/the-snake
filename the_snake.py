@@ -109,7 +109,7 @@ class Snake(GameObject):
 
     def get_head_position(self):
         """Возвращает позицию головы змейки."""
-        return self.positions
+        return self.positions[0]
 
     def move(self):
         """Обновляет позицию змейки, учитывая её движение."""
@@ -140,7 +140,7 @@ class Snake(GameObject):
 
         # 2. Перерисовываем прошлую голову как обычный сегмент тела
         if len(self.positions) > 1:
-            self._draw_cell(cell_position=self.positions)
+            self._draw_cell(cell_position=self.positions[1])
 
         # 3. Рисуем новую голову
         self._draw_cell(cell_position=self.get_head_position())
